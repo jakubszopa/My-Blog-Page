@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <%- include('includes/head') %>
+  <link rel="stylesheet" href="styles/main-page.css">
+  <title>MyBlog</title>
+</head>
+<html lang="en">
+  <body>
+    <header><%- include('includes/header') %></header>
+    <main>
+      <h1>Recent posts</h1>
+      <% if (!posts || posts.length === 0) { %> 
+        <p>There are no posts! Maybe write some?</p>
+     <% } %> 
+      <% for (const post of posts) { %>
+        <%- include('includes/post', {post: post}) %>
+      <% } %>
+    </main>
+  </body>
+</html>

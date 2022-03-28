@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <%- include('includes/head') %>
+  <link rel="stylesheet" href="styles/logging.css">
+  <title>MyBlog</title>
+</head>
+<html lang="en">
+  <body>
+    <header><%- include('includes/header') %></header>
+    <main>
+        <article class="container">
+          <h2>Login</h2>
+          <% if (inputData.hasError) { %> 
+           <p><%= inputData.message %></p>
+          <% } %> 
+          <form action="/login" method="post">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="user-email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="user-password" required>
+            <button>Login</button>
+          </form>
+            <a href="/signup">Signup instead</a>
+        </article>
+    </main>

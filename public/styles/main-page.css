@@ -1,0 +1,35 @@
+h1 {
+    font-size: 1.8rem;
+    margin: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#post-container {
+    font-family: 'Zilla Slab', serif;
+    background-color: rgba(211, 127, 127, 0.9);
+    width: 30%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+#post-container #title {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+#post-container #summary {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+#post-container #post-content {
+    white-space: pre-wrap;
+    font-weight: 300;
+}
